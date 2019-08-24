@@ -29,18 +29,6 @@ app.get('',(req,res) => {
     })
 })
 
-app.get('/forgotPassword',(request,response)=>{
-    response.render('forgotPassword',{
-        title:"forgotPassword"
-    })
-})
-
-app.get('/login',(request,response)=>{
-    response.render('login',{
-        title:"Login",
-        name:"venoth"
-    })
-})
 app.get('/about',(req,res) =>
 {
     res.render('about',
@@ -95,12 +83,8 @@ app.get('/weather', (request,response) => {
                 })
                 
             })
-            
-        
-    }
+        }
 })
-
-
 
 app.get('/products',(req,res) =>
 {
@@ -119,14 +103,6 @@ app.get('/products',(req,res) =>
     }
     
 })
-
-app.get('/convertToMinutes',(req,res)=>{
-    res.render('convertToMinutes',{
-        title: "convertSecondsToMinutes" 
-    })
-    
-})
-
 
 app.get('/help/*',(req,res) =>{
     res.render('error_404',{
